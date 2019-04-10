@@ -1,0 +1,55 @@
+@import 'reset';
+@import 'test';
+
+html {
+    height: 100%;
+    body {
+        height: 100%;
+        margin: 0;
+        background: rgb(21, 159, 155);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        
+        h1 {
+            font-weight: 400;
+            font-size: 3em;
+        }
+        
+        input {
+            padding: 15px;
+            border-radius: 25px;
+            border: none;
+            width: 100px;
+            transition: .6s;
+        }
+        
+        input:focus {
+            width: 180px;
+            background: rgba(255, 255, 255, .5);
+            color: #fff;
+        }
+        
+        input:focus::placeholder {
+            color: #fff;
+        }
+        
+        div.stats {
+            margin-top: 20px;
+            font-size: 32px;
+            
+            div.spinner {
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                border: none;
+                border-top: 5px solid lightblue;
+                border-radius: 50%;
+                // animation: spinner 1s infinite;
+            }
+        }
+    }
+}
